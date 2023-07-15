@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Work+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --button-color: #ff900e;
+  --text-color1: #131313;
+  --text-color2: #424242;
+  --text-color3: #727272;
+  --text-color4: #424242;
+  --text-color5: #fff;
+  --bg-color: rgba(255, 144, 14, 0.1);
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Navbar Section */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3vh;
+}
+.logo {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--text-color1);
+}
+.menu-items {
+  display: flex;
+  column-gap: 3rem;
+  font-size: 1.125rem;
+}
+
+/* Banner Section */
+.banner-section {
+  height: 139vh;
+  background-color: var(--bg-color);
+}
+.banner-container {
+  text-align: center;
+  margin-top: 10vh;
+}
+.banner-title {
+  color: var(--text-color1);
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 3vh;
+}
+.description {
+  color: var(--text-color3);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 3vh;
+}
+.btn {
+  margin-bottom: 3vh;
+  padding: 15px 30px;
+  background-color: var(--button-color);
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+}
+
+/* mobile devices */
+@media screen and (max-width: 576px){
+    .navbar {
+        display: flex;
+        flex-direction: column;
+      }
+    .logo{
+        font-size: 1.8rem;
+        padding: 10px 0px 20px 0px;
+    }
+    .menu-items {
+        display: flex;
+        column-gap: 1rem;
+        font-size: 1rem;
+    }
+    .banner-section {
+        height: 120vh
+    }
+    .banner-container {
+        margin-top: 5vh;
+      }
+    .banner-title {
+        font-size: 2.5rem;
+        margin-bottom: 3vh;
+    }
+    .description {
+        padding: 0px 20px;
+        text-align: justify;
+    }
+    .btn {
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+    .banner-img{
+        width: 90%;
+    }
+}
