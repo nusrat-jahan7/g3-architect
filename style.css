@@ -78,152 +78,360 @@ body {
 }
 
 /* Featrure Section */
-.feature-container{
+.feature-container {
   display: flex;
   align-items: center;
-  margin: 10vh 0vh 15vh 0vh ;
+  margin: 10vh 0vh 15vh 0vh;
   gap: 80px;
 }
-.feature-img{
+.feature-img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   border-radius: 8px;
 }
-.section-title{
+.section-title {
   font-size: 2.8rem;
   font-weight: 700;
   color: var(--text-color1);
 }
+.more-feature-container {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-bottom: 10vh;
+}
+.more-feature-img {
+  margin-left: 10vh;
+}
+.feature-card {
+  margin-bottom: 2vh;
+  width: 586px;
+  height: 220px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  padding: 30px 30px 30px 30px;
+}
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-color1);
+}
+.experience-badge {
+  width: 342px;
+  height: 200px;
+  background-color: var(--button-color);
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding-top: 3.5vh;
+  position: relative;
+  bottom: 100px;
+}
+.experience-badge h3 {
+  font-size: 4rem;
+}
+
+/* Facts Section */
+.facts-text {
+  margin-bottom: 10vh;
+  width: 40%;
+}
+.facts-conatiner {
+  display: flex;
+  justify-content: space-around;
+}
+.facts-contents {
+  border: 1px solid #ff900e;
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+  text-align: center;
+  padding-top: 5vh;
+  margin-bottom: 10vh;
+}
+.facts-contents p {
+  color: #727272;
+  font-size: 1.25rem;
+}
+
+/* Sponsor Section */
+.sponsor-container {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+}
+.sponsor-img {
+  margin: 10vh 0vh;
+  display: flex;
+  justify-content: space-around;
+}
+footer {
+  background-color: var(--bg-color);
+  text-align: center;
+  width: 1440px;
+  height: 100px;
+  border-radius: 8px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* mobile devices */
-@media screen and (min-width: 300px) and (max-width: 767px){
-    .navbar {
-        display: flex;
-        flex-direction: column;
-      }
-    .logo{
-        font-size: 1.3rem;
-        padding: 10px 0px 20px 0px;
-    }
-    .menu-items {
-        display: flex;
-        column-gap: 1rem;
-        font-size: 1rem;
-    }
-    .banner-section {
-        height: auto;
-    }
-    .banner-container {
-        margin-top: 5vh;
-      }
-    .banner-title, .section-title {
-        font-size: 1.8rem;
-        margin-bottom: 3vh;
-    }
-    .description {
-        padding: 0px 20px;
-        text-align: center;
-    }
-    .btn {
-        padding: 15px 20px;
-        font-size: 1rem;
-        text-align: center;
-    }
-    .banner-img{
-        width: 90%;
-    }
-    .feature-container{
-      display: flex;
-      flex-direction: column-reverse;
-      text-align: center;
-      gap: 30px;
-    }
-    .feature-img{
-      display: grid;
-      grid-template-columns: repeat(1,1fr);
-      gap: 20px;
-      border-radius: 8px;
-    }
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo {
+    font-size: 1.3rem;
+    padding: 10px 0px 20px 0px;
+  }
+  .menu-items {
+    display: flex;
+    column-gap: 1rem;
+    font-size: 1rem;
+  }
+  .banner-section {
+    height: auto;
+  }
+  .banner-container {
+    margin-top: 5vh;
+  }
+  .banner-title,
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 3vh;
+  }
+  .description {
+    padding: 0px 20px;
+    text-align: center;
+  }
+  .btn {
+    padding: 15px 20px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .banner-img {
+    width: 90%;
+  }
+  .feature-container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 10vh 0vh 10vh 0vh;
+    text-align: center;
+    gap: 30px;
+  }
+  .feature-img {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    border-radius: 8px;
+  }
+  .more-feature-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    gap: 30px;
+  }
+  .more-feature-container p {
+    text-align: start;
+  }
+  .more-feature-img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .experience-badge {
+    position: static;
+    height: 150px;
+    width: 250px;
+  }
+  .experience-badge h3 {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+  }
+  .experience-badge p {
+    text-align: center;
+  }
+  .feature-card {
+    margin-bottom: 2vh;
+    max-width: 346px;
+    height: 330px;
+  }
+  .facts-text {
+    text-align: center;
+    width: 90%;
+    padding-left: 30px;
+  }
+  .facts-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .facts-conatiner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .sponsor-container {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .sponsor-img img{
+    width: 80%;
+  }
+  .sponsor-img {
+    margin: 10vh 0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  footer{
+    width: 100%;
+  }
 }
 
 /* Tablet or laptop devices */
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .navbar {
-      display: flex;
-      padding: 15px 30px;
-    }
-  .logo{
-      font-size: 1.9rem;
-      padding: 10px 0px 20px 0px;
+    display: flex;
+    padding: 15px 30px;
+  }
+  .logo {
+    font-size: 1.9rem;
+    padding: 10px 0px 20px 0px;
   }
   .menu-items {
-      display: flex;
-      column-gap: 1rem;
-      font-size: 1rem;
+    display: flex;
+    column-gap: 1rem;
+    font-size: 1rem;
   }
   .banner-section {
-      height: auto;
+    height: auto;
   }
   .banner-container {
-      margin-top: 5vh;
-    }
+    margin-top: 5vh;
+  }
   .banner-title {
-      font-size: 2.5rem;
-      margin-bottom: 3vh;
+    font-size: 2.5rem;
+    margin-bottom: 3vh;
   }
   .description {
-      padding: 0px 80px;
-      /* text-align: justify; */
+    padding: 0px 80px;
+    /* text-align: justify; */
   }
   .btn {
-      padding: 15px 20px;
-      font-size: 1rem;
+    padding: 15px 20px;
+    font-size: 1rem;
   }
-  .banner-img{
-      width: 90%;
-      height:auto;
+  .banner-img {
+    width: 90%;
+    height: auto;
   }
-  .feature-container{
+  .feature-container {
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
     gap: 30px;
   }
+  .more-feature-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    gap: 30px;
+  }
+  .more-feature-img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .feature-card {
+    margin-bottom: 2vh;
+    width: 626px;
+    height: 250px;
+  }
+  .facts-text {
+    text-align: center;
+    width: 90%;
+  }
+  .facts-conatiner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+  .facts-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sponsor-container {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .sponsor-img img{
+    width: 30%;
+  }
+  .sponsor-img {
+    margin: 10vh 0vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  footer{
+    width: 100%;
+  }
 }
-@media screen and (min-width: 1024px) and (max-width: 1280px){
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
   .navbar {
-      display: flex;
-      padding: 15px 30px;
-    }
-  .logo{
-      font-size: 1.9rem;
-      padding: 10px 0px 20px 0px;
+    display: flex;
+    padding: 15px 30px;
+  }
+  .logo {
+    font-size: 1.9rem;
+    padding: 10px 0px 20px 0px;
   }
   .menu-items {
-      display: flex;
-      column-gap: 1rem;
-      font-size: 1rem;
+    display: flex;
+    column-gap: 1rem;
+    font-size: 1rem;
   }
   .banner-section {
-      height: auto;
+    height: auto;
   }
   .banner-container {
-      margin-top: 5vh;
-    }
+    margin-top: 5vh;
+  }
   .banner-title {
-      font-size: 2.5rem;
-      margin-bottom: 3vh;
+    font-size: 2.5rem;
+    margin-bottom: 3vh;
   }
   .btn {
-      padding: 15px 20px;
-      font-size: 1rem;
+    padding: 15px 20px;
+    font-size: 1rem;
   }
-  .banner-img{
-      width: 90%;
-      height:auto;
+  .banner-img {
+    width: 90%;
+    height: auto;
   }
-  .feature-container{
+  .feature-container {
     gap: 50px;
+  }
+  .more-feature-container {
+    gap: 30px;
+  }
+  .more-feature-img {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+  footer{
+    width: 100%;
   }
 }
